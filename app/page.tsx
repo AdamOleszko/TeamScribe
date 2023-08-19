@@ -23,7 +23,7 @@ export default async function Home() {
   let posts;
 
   try {
-    const [postsRes, sessionRes] = await Promise.allSettled([
+    const [postsRes] = await Promise.allSettled([
       getPosts(),
       // getServerSession(authOptions),
     ]);
@@ -75,9 +75,9 @@ export default async function Home() {
               >
                 <h2 className="text-sm">{post.author?.name}:</h2>
                 <p className="break-all text-sm font-bold">{post.title}</p>
-                {session?.user.email === post.author?.email && (
-                  <Delete id={post.id} />
-                )}
+                {/*{session?.user.email === post.author?.email && (*/}
+                {/*  <Delete id={post.id} />*/}
+                {/*)}*/}
               </div>
             ))}
           </div>

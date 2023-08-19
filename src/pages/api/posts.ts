@@ -11,14 +11,14 @@ export default async function handler(
     return res.status(403).send("Unauthorized");
   }
 
-  const id = session.user.id;
+  // const id = session.user.id;
 
   if (req.method === "POST") {
     await prisma.posts.create({
       data: {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
         title: req.body.title,
-        authorId: id,
+        // authorId: id,
       },
     });
 
