@@ -17,13 +17,23 @@ export function SignOut() {
 
 export function SignIn() {
   return (
+      <>
     <button
       className="mb-4 flex rounded-md border border-gray-800 bg-black px-4 py-3 text-sm font-semibold text-neutral-200 transition-all hover:text-white"
       // eslint-disable-next-line @typescript-eslint/no-misused-promises
-      // onClick={() => signIn("github")}
+      onClick={() => signIn("google")}
     >
       <GitHubIcon />
-      <div className="ml-3">Sign in with GitHub</div>
+      <div className="ml-3">Sign in with Google</div>
     </button>
+  <button
+      className="mb-4 flex rounded-md border border-gray-800 bg-black px-4 py-3 text-sm font-semibold text-neutral-200 transition-all hover:text-white"
+      // eslint-disable-next-line @typescript-eslint/no-misused-promises
+      onClick={() => signIn("email", {}, {})}
+  >
+    <GitHubIcon />
+    <div className="ml-3">Sign in with magic link</div>
+  </button>
+      </>
   );
 }
