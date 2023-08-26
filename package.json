@@ -10,14 +10,20 @@
   },
   "dependencies": {
     "@auth/kysely-adapter": "^0.1.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.6",
+    "@slack/bolt": "^3.13.3",
     "@vercel/postgres": "^0.4.1",
     "@vercel/postgres-kysely": "^0.4.1",
+    "fs": "^0.0.1-security",
     "kysely": "^0.26.1",
     "next": "13.1.6",
     "next-auth": "^4.19.0",
     "nodemailer": "^6.9.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
     "zod": "^3.20.2"
   },
   "devDependencies": {
