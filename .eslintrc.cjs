@@ -10,6 +10,18 @@ module.exports = {
         project: "tsconfig.json",
       },
     },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "@typescript-eslint/ban-ts-comment": ["warn"],
+        "@typescript-eslint/no-unsafe-assignment": ["warn"],
+        "@typescript-eslint/no-unsafe-call": ["warn"],
+        "@typescript-eslint/require-await": ["warn"],
+        "@typescript-eslint/no-unsafe-member-access": ["warn"],
+        "@typescript-eslint/no-unsafe-argument": ["warn"],
+
+      }
+    }
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -25,5 +37,9 @@ module.exports = {
         fixStyle: "inline-type-imports",
       },
     ],
+    "@typescript-eslint/ban-ts-comment": ["warn"],
+    "@typescript-eslint/no-unsafe-assignment": ["warn"],
+    "@typescript-eslint/no-unsafe-call": ["warn"],
+
   },
 };
